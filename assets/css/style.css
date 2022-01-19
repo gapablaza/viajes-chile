@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap");
 
-/* Estilos Generales */
+/* ESTILOS GENERALES */
 * {
     margin: 0;
     padding: 0;
@@ -39,7 +39,7 @@ ul.separated li {
 }
 
 
-/* Modificaciones a Bootstrap */
+/* Modificaciones a BOOTSTRAP */
 nav.navbar {
     background-color: var(--bg-main) !important;
 }
@@ -56,7 +56,17 @@ main {
 }
 main h2 {
     margin-bottom: var(--default-gap);
+    font-family: "Lobster", sans-serif;
 }
+
+
+/* Sección CAROUSEL */
+@media (max-width: 767.98px) {
+    .carousel  {
+        margin-top: 80px;
+    }
+}
+
 
 /* Sección WHO */
 .who {
@@ -69,40 +79,15 @@ main h2 {
     font-size: 1.5rem;
 }
 
-/* .feature {
-    margin-bottom: 20px;
-}
-
-.feature h2 {
-    font-size: 40px;
+.who .reverse-order {
+    display: flex;
+    flex-direction: column-reverse;
 }
 @media (max-width: 767.98px) {
-    .feature h2 {
-        font-size: 25px;
+    .who .reverse-order  {
+        flex-direction: column;
     }
 }
-
-.feature p {
-    font-weight: 700;
-    font-size: 20px;
-}
-@media (max-width: 767.98px) {
-    .feature p {
-        font-size: 16px;
-    }
-}
-
-.feature .buttons button {
-    margin-right: 20px;
-    margin-bottom: 20px;
-    border-color: #ddd;
-}
-@media (max-width: 767.98px) {
-    .feature .buttons button {
-        margin-right: 0;
-        font-size: 13px;
-    }
-} */
 
 
 /* Sección RESALTED */
@@ -134,27 +119,6 @@ main h2 {
     color: #fff;
 }
 
-/* .content h3 {
-    font-size: 20px;
-    font-weight: 400;
-    display: inline-block;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #373a3c;
-    margin-bottom: 20px;
-}
-@media (max-width: 767.98px) {
-    .content h3 {
-        font-size: 16px;
-        font-weight: 700;
-        border-bottom: none;
-        margin-bottom: 30px;
-    }
-}
-
-.content ul.unstyled {
-    margin-bottom: 20px;
-} */
-
 
 
 /* Sección FOOTER */
@@ -174,6 +138,7 @@ footer .container {
 
 footer p {
     margin: 0;
+    font-family: "Lobster", sans-serif;
 }
 
 footer ul {
@@ -185,4 +150,9 @@ footer ul {
 
 footer li {
     margin-left: 15px;
+}
+
+footer a,
+footer a:hover {
+    color: #fff;
 }
