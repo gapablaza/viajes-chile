@@ -7,21 +7,21 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 
 $(function() {
     
-    // simula el envío de un email al presionar el botón
-    $( "#enviarCorreo" ).click(function() {
-        alert("El correo fue enviado correctamente");
-    });
+    // // simula el envío de un email al presionar el botón
+    // $( "#enviarCorreo" ).click(function() {
+    //     alert("El correo fue enviado correctamente");
+    // });
 
-    // cambia el color de las letras de una sección específica al hacer doble-click
-    $( ".content h3").on( "dblclick", function() {
-        var elem = $(this);
-        elem.css("color", "red");
-    });
+    // // cambia el color de las letras de una sección específica al hacer doble-click
+    // $( ".content h3").on( "dblclick", function() {
+    //     var elem = $(this);
+    //     elem.css("color", "red");
+    // });
 
-    // hace aparecer/desaparecer el contenido de una tarjeta
-    $( ".card-title ").on( "click", function() {
-        var card = $(this);
-        card.next(".card-text").toggle();
-    });
+    // // hace aparecer/desaparecer el contenido de una tarjeta
+    // $( ".card-title ").on( "click", function() {
+    //     var card = $(this);
+    //     card.next(".card-text").toggle();
+    // });
 
 });
