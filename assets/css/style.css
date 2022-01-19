@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap");
+
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #373a3c;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+ul.unstyled {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.separated li {
+    margin-bottom: 20px;
+}
+
+
+/* Modificaciones a Bootstrap */
+#main hr {
+    height: 1px;
+    background-color: #000000;
+    opacity: 1;
+}
+
+#main .carousel-indicators {
+    margin-bottom: -3rem;
+}
+
+#main .carousel-indicators [data-bs-target] {
+    background-color: #000;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+}
+
+a.navbar-brand {
+    font-family: "Lobster", sans-serif;
+    font-size: 37px;
+}
+
+
+/* Sección FEATURE */
+.feature {
+    margin-bottom: 20px;
+}
+
+.feature h2 {
+    font-size: 40px;
+}
+@media (max-width: 767.98px) {
+    .feature h2 {
+        font-size: 25px;
+    }
+}
+
+.feature p {
+    font-weight: 700;
+    font-size: 20px;
+}
+@media (max-width: 767.98px) {
+    .feature p {
+        font-size: 16px;
+    }
+}
+
+.feature .buttons button {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-color: #ddd;
+}
+@media (max-width: 767.98px) {
+    .feature .buttons button {
+        margin-right: 0;
+        font-size: 13px;
+    }
+}
+
+
+/* Sección CAROUSEL */
+.carousel {
+    margin: 60px 0 70px;
+}
+
+
+/* Sección CONTENT */
+.content {
+    margin-top: 40px;
+    margin-bottom: 70px;
+    text-align: justify;
+}
+@media (max-width: 767.98px) {
+    .content {
+        margin-bottom: 40px;
+    }
+}
+
+.content h3 {
+    font-size: 20px;
+    font-weight: 400;
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #373a3c;
+    margin-bottom: 20px;
+}
+@media (max-width: 767.98px) {
+    .content h3 {
+        font-size: 16px;
+        font-weight: 700;
+        border-bottom: none;
+        margin-bottom: 30px;
+    }
+}
+
+.content ul.unstyled {
+    margin-bottom: 20px;
+}
+
+
+/* Sección RELATED */
+.related {
+    margin-bottom: 70px;
+}
+
+.related h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+@media (max-width: 767.98px) {
+    .related h2 {
+        font-size: 25px;
+    }
+}
+
+.related h3.card-title {
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+@media (max-width: 767.98px) {
+    .related h3.card-title {
+        font-size: 17px;
+    }
+}
+
+
+/* Sección FOOTER */
+footer {
+    text-align: center;
+    color: #fff;
+}
+
+footer .pre-footer {
+    background-color: #dc3545;
+    padding: 150px 0 200px;
+}
+@media (max-width: 767.98px) {
+    footer .pre-footer {
+        padding: 100px 2rem;
+    }
+}
+
+footer .pre-footer h3 {
+    font-size: 40px;
+}
+@media (max-width: 767.98px) {
+    footer .pre-footer h3 {
+        font-size: 30px;
+    }
+}
+
+footer .pre-footer p {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+@media (max-width: 767.98px) {
+    footer .pre-footer p {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+footer .pre-footer button {
+    border-color: #fff;
+    width: 230px;
+    color: #fff;
+}
+
+footer .pre-footer strong {
+    font-family: "Lobster", sans-serif;
+    font-size: 37px;
+    font-weight: 400;
+}
+@media (max-width: 767.98px) {
+    footer .pre-footer strong {
+        font-size: 20px;
+    }
+}
+
+footer .last-footer {
+    font-family: "Lobster", sans-serif;
+    font-size: 37px;
+    background-color: #373a3c;
+    padding: 20px 0;
+    margin-bottom: 0;
+}
