@@ -5,23 +5,19 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 
+// función Bootstrap para aplicar los popovers definidos en toda la página
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+
 $(function() {
     
-    // // simula el envío de un email al presionar el botón
-    // $( "#enviarCorreo" ).click(function() {
-    //     alert("El correo fue enviado correctamente");
-    // });
-
-    // // cambia el color de las letras de una sección específica al hacer doble-click
-    // $( ".content h3").on( "dblclick", function() {
-    //     var elem = $(this);
-    //     elem.css("color", "red");
-    // });
-
-    // // hace aparecer/desaparecer el contenido de una tarjeta
-    // $( ".card-title ").on( "click", function() {
-    //     var card = $(this);
-    //     card.next(".card-text").toggle();
-    // });
+    // Simular el envío del formulario de contacto
+    $('#contact-form').submit(function(event) {
+        event.preventDefault();
+        $(this).trigger("reset");;
+        alert('Mensaje enviado exitosamente! (simulación)');
+    });
 
 });

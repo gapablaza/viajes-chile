@@ -77,7 +77,10 @@
                 <h2>¿Quiénes Somos?</h2>
                 <div class="row">
                     <div class="col-12 col-md-4 mb-4 mb-md-0">
-                        <p class="with-icon"><i class="fas fa-plane"></i></p>
+                        <p class="with-icon" data-bs-toggle="popover" title="Viajes" 
+                            data-bs-placement="top" data-bs-content="Revisa en detalle como viajar con nosotros">
+                            <i class="fas fa-plane"></i>
+                        </p>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero nostrum dolores maxime odit
                             quos aliquam earum reprehenderit sed sint fugiat, dolorum fugit nam pariatur nemo, dicta,
                             rem mollitia vel dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
@@ -85,7 +88,10 @@
                             reiciendis nostrum officiis perspiciatis error distinctio. Veniam, quam.</p>
                     </div>
                     <div class="col-12 col-md-4 mb-4 mb-md-0 reverse-order">
-                        <p class="with-icon"><i class="fas fa-mountain"></i></p>
+                        <p class="with-icon" data-bs-toggle="popover" title="Escaladas" 
+                            data-bs-placement="top" data-bs-content="Anótate en alguna de nuestrass escaladas">
+                            <i class="fas fa-mountain"></i>
+                        </p>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero nostrum dolores maxime odit
                             quos aliquam earum reprehenderit sed sint fugiat, dolorum fugit nam pariatur nemo, dicta,
                             rem mollitia vel dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
@@ -93,7 +99,10 @@
                             reiciendis nostrum officiis perspiciatis error distinctio. Veniam, quam.</p>
                     </div>
                     <div class="col-12 col-md-4 mb-4 mb-md-0">
-                        <p class="with-icon"><i class="fas fa-route"></i></p>
+                        <p class="with-icon" data-bs-toggle="popover" title="Senderismo" 
+                            data-bs-placement="top" data-bs-content="Tenemos alternativas disponibles para todos los niveles">
+                            <i class="fas fa-route"></i>
+                        </p>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero nostrum dolores maxime odit
                             quos aliquam earum reprehenderit sed sint fugiat, dolorum fugit nam pariatur nemo, dicta,
                             rem mollitia vel dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
@@ -155,18 +164,18 @@
 
             <section id="contacto" class="contact">
                 <h2>Contacto</h2>
-                <form>
+                <form id="contact-form">
                     <div class="">
                         <label for="name" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" id="name" aria-describedby="emailHelp" required>
                     </div>
                     <div class="">
                         <label for="subject" class="form-label">Asunto</label>
-                        <input type="text" class="form-control" id="subject">
+                        <input type="text" class="form-control" id="subject" required>
                     </div>
                     <div class="">
                         <label for="subject" class="form-label">Mensaje</label>
-                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                        <textarea class="form-control" aria-label="With textarea" required></textarea>
                     </div>
                     <button type="submit" class="btn">Enviar</button>
                 </form>
