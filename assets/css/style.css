@@ -38,6 +38,10 @@ ul.separated li {
     margin-bottom: 20px;
 }
 
+main section {
+    padding-top: 90px;
+}
+
 
 /* Modificaciones a BOOTSTRAP */
 nav.navbar {
